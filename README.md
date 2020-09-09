@@ -1,4 +1,4 @@
-### Bioinformatics seminars at Skoltech
+### Introduction: Bioinformatics seminars at Skoltech
 
 Welcome to the Seminar 4 of this term at Skoltech! 
 We're through the course on Bioinformatics by Mikhail Gelfand, and I (Aleksandra Galitsyna) will be your TA for this seminar on 
@@ -9,11 +9,11 @@ The slides and datasets for this seminar can be found in [this folder on github]
 The home assignments and table with files distribution can be found in Canvas. 
 
 
-### Seminar 4. Multiple Global Alignment and Multiple Local Alignment 
+## Seminar 4. Multiple Global Alignment and Multiple Local Alignment 
 
 Aleksandra Galitsyna 10/09/2020
 
-#### Location of the files
+### Location of the files
 
 The files for this hometask are located in this github repository: 
 
@@ -27,7 +27,7 @@ If you need to download raw file, you can press `"Raw"` in GitHub window with fi
 
 https://raw.githubusercontent.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/master/data/peaks.fasta
 
-#### 1. Multiple alignment
+### 1. Multiple alignment
 
 In this part of the task you will work with alignments with three popular aligners: MUSCLE, ClustalW and T-COFFEE. 
 
@@ -121,6 +121,7 @@ This tool allow you to paste your alignment and highlight it based on sequence c
 Pay extra attention to: 
 - Type of sequence you upload/paste (DNA)
 - Input format of your alignment. The full list of MView-accepted formats can be found [here](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MView+Help+and+Documentation#MViewHelpandDocumentation-informat). 
+The examples of different formats can be found [here](https://www.hiv.lanl.gov/content/sequence/HelpDocs/SEQsamples.html)
 
 > Do not paste the original upstreams.fasta at this step! Your alignment should contain gaps ("-" symbols). 
 
@@ -185,11 +186,11 @@ Save this file and download it to your local computer. **This will be your input
 > Then press `“Esc”` and exit vim. You an save this file and exit `“:wq”` or simply copy the result to console.
 
 
-#### 2. Construction of position weight matrix (PWM)
+### 2. Construction of position weight matrix (PWM)
  
 You will use the output of Task 1 (1.7) for the construction of consensus sequence and PWM. 
 
-1. Do the following steps:
+2.1. Do the following steps:
 - Go to RSAT web tool: http://embnet.ccg.unam.mx/rsat/ 
 - Click -> `"Matrix tools"` from left menu 
 - -> `"convert matrix"`
@@ -198,12 +199,12 @@ You will use the output of Task 1 (1.7) for the construction of consensus sequen
 - Check the boxes "consensus", "counts", "frequencies", "weights", "profile" and "Compute reverse complement" (if they are not selected). 
 Set all other parameters to default. Press “GO”. 
 
-2. In the RSAT output you can observe the transition from alignment to nucleotides counts matrix, 
+2.2. In the RSAT output you can observe the transition from alignment to nucleotides counts matrix, 
 frequencies matrix, then to weights, profile and logo. 
 
 Save the forward logo to your local computer. **This will be part of your home assignment (Task 2).**
 
-#### 3. Automated search of motifs in the sequences with MEME. 
+### 3. Automated search of motifs in the sequences with MEME. 
 
 3.1. Now let’s switch to some more automated tool, Multiple Expression motifs for Motif Elicitation (MEME, http://meme-suite.org/tools/meme). 
 
@@ -223,7 +224,7 @@ Save the resulting report to your local computer. **This will be part of your ho
 
 > Hint: the regulatory motif was PhnR from Vibrio. 
 
-#### 4. Motif search in ChIP-Seq data
+### 4. Motif search in ChIP-Seq data
 
 Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset. 
 Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
@@ -267,6 +268,19 @@ https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/da
 
 4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that. 
 
+### Home assignments
 
-I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. 
-Write to my Skoltech e-mail in case if you have questions, search by Aleksandra Galitsyna.
+Your home task will be in Canvas "Assignments" section. 
+The assignments will test your understanding of the topic. 
+You are expected to learn how to use T-COFFEE, Muscle and ClustalW, 
+build global and local alignments (and tell the difference between them), 
+build the motifs from the given alignment and perform __de novo__ search of the motifs.
+The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
+and express your opinion on the results. 
+
+The deadline for the accomplishment of the home task is 12:00 on Wednesday, September 16. 
+
+### Afterword from TA
+
+I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. :) 
+Write me at Skoltech e-mail, search it in Outlook by Aleksandra Galitsyna.
