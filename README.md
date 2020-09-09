@@ -15,10 +15,17 @@ Aleksandra Galitsyna 10/09/2020
 
 #### Location of the files
 
-The files for this hometask are located here: 
+The files for this hometask are located in this github repository: 
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/data/
+https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/tree/master/data/
 
+If you need to view the file, the link will be: 
+
+https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/upstreams.fasta
+
+If you need to download raw file, you can press `"Raw"` in GitHub window with file and the link will be: 
+
+https://raw.githubusercontent.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/master/data/peaks.fasta
 
 #### 1. Multiple alignment
 
@@ -37,7 +44,7 @@ or **command line interface (CLI)** (and run aligners remotely though bash inter
  
 1.1.a. To download the files on the local computer, follow the links, e.g.:
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/data/upstreams.fastq
+https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/upstreams.fasta
 
 
 1.1.b. If you select CLI, log in to server in Putty, or in bash: 
@@ -56,7 +63,7 @@ cd Seminar4
 To download the files in the terminal, use: 
 
 ```bash
-wget https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/data/upstreams.fastq
+wget https://raw.githubusercontent.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/master/data/upstreams.fasta
 ```
 
 Useful commands to check the result of download: 
@@ -80,9 +87,9 @@ Helpful links:
 
 1.2.a. If you select web server interface, follow the instructions on the website, for example: 
 
-![Web Server Instructions 1](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/images/Figure1.png)
+![Web Server Instructions 1](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure1.png?raw=true)
 
-![Web Server Instructions 2](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/images/Figure2.png)
+![Web Server Instructions 2](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure2.png?raw=true)
 
 
 1.2.b. In terminal, to get the documentation of the aligners, type one of these: 
@@ -208,7 +215,7 @@ Save the forward logo to your local computer. **This will be part of your home a
 
 The initial submission form should look similar to this one: 
 
-![MEME Instructions](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/images/Figure3.png)
+![MEME Instructions](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure3.png?raw=true)
 
 
 Are any of the found motifs similar to your result obtained manually in Task 2? 
@@ -222,13 +229,13 @@ Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset.
 Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
 We will use this knowledge for a test run of MEME-ChIP. 
 
-- Download ChIP-Seq peaks (peaks.fasta). 
+- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/peaks.fasta)). 
 - Go to MEME-ChIP web interface: http://meme-suite.org/ -> MEME-ChIP
 - Do not change the options, submit the peaks.fasta file
 
 The result will look as following: 
 
-![MEME ChIP output](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/images/Figure4.png)
+![MEME ChIP output](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure4.png?raw=true)
 
 To interpret this result, take a look at:
 - Number of found motifs
