@@ -1,31 +1,33 @@
 ### Introduction: Bioinformatics seminars at Skoltech
 
+**Disclaimer:** the entire repository is fored from Aleksandra Galitsyna with her permission. 
+
 Welcome to the Seminar 4 of this term at Skoltech! 
-We're through the course on Bioinformatics by Mikhail Gelfand, and I (Aleksandra Galitsyna) will be your TA for this seminar on 
+We're through the course on Bioinformatics by Mikhail Gelfand, and I (Nikolai Bykov) will be your TA for this seminar on 
 sequence alignments and motif search. 
 
-The slides and datasets for this seminar can be found in [this folder on github](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/). 
+The slides and datasets for this seminar can be found in [this folder on github](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/). 
 
 The home assignments and table with files distribution can be found in Canvas. 
 
 
 ## Seminar 4. Multiple Global Alignment and Multiple Local Alignment 
 
-Aleksandra Galitsyna 10/09/2020
+Nikolai Bykov 10/11/2021
 
 ### Location of the files
 
 The files for this hometask are located in this github repository: 
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/tree/master/data/
+https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/
 
 If you need to view the file, the link will be: 
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/upstreams.fasta
+https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
 If you need to download raw file, you can press `"Raw"` in GitHub window with file and the link will be: 
 
-https://raw.githubusercontent.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/master/data/peaks.fasta
+https://raw.githubusercontent.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
 
 ### 1. Multiple alignment
 
@@ -44,7 +46,7 @@ or **command line interface (CLI)** (and run aligners remotely though bash inter
  
 1.1.a. To download the files on the local computer, follow the links, e.g.:
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/upstreams.fasta
+https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
 
 1.1.b. If you select CLI, log in to server in Putty, or in bash: 
@@ -63,7 +65,7 @@ cd Seminar4
 To download the files in the terminal, use: 
 
 ```bash
-wget https://raw.githubusercontent.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/master/data/upstreams.fasta
+wget https://raw.githubusercontent.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta
 ```
 
 Useful commands to check the result of download: 
@@ -87,9 +89,9 @@ Helpful links:
 
 1.2.a. If you select web server interface, follow the instructions on the website, for example: 
 
-![Web Server Instructions 1](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure1.png?raw=true)
+![Web Server Instructions 1](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure1.png?raw=true)
 
-![Web Server Instructions 2](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure2.png?raw=true)
+![Web Server Instructions 2](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure2.png?raw=true)
 
 
 1.2.b. In terminal, to get the documentation of the aligners, type one of these: 
@@ -216,7 +218,7 @@ Save the forward logo to your local computer. **This will be part of your home a
 
 The initial submission form should look similar to this one: 
 
-![MEME Instructions](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure3.png?raw=true)
+![MEME Instructions](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure3.png?raw=true)
 
 
 Are any of the found motifs similar to your result obtained manually in Task 2? 
@@ -230,13 +232,13 @@ Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset.
 Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
 We will use this knowledge for a test run of MEME-ChIP. 
 
-- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/data/peaks.fasta)). 
+- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
 - Go to MEME-ChIP web interface: http://meme-suite.org/ -> MEME-ChIP
 - Do not change the options, submit the peaks.fasta file
 
 The result will look as following: 
 
-![MEME ChIP output](https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/blob/master/images/Figure4.png?raw=true)
+![MEME ChIP output](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure4.png?raw=true)
 
 To interpret this result, take a look at:
 - Number of found motifs
@@ -264,7 +266,7 @@ about the factor or species. You need to derive this information from MEME-ChIP 
 
 4.2. Download your file with peaks from the "data/unknown_peaks" folder from this repository: 
 
-https://github.com/agalitsyna/Teaching_materials_Skoltech-Bioinformatics-2020/data/unknown_peaks
+https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/data/unknown_peaks
 
 4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that. 
 
@@ -283,4 +285,4 @@ The deadline for the accomplishment of the home task is 12:00 on Wednesday, Sept
 ### Afterword from TA
 
 I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. :) 
-Write me at Skoltech e-mail, search it in Outlook by Aleksandra Galitsyna.
+Write me at Skoltech e-mail, search it in Outlook by Nikolai Bykov.
