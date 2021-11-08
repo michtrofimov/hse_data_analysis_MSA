@@ -214,7 +214,7 @@ Save the forward logo to your local computer. **This will be part of your home a
 
 - Upload the upstreams.fasta file
 - Select `"One occurence per sequence"` for `"Select the site distribution"`
-- Press “Advanced options”, set “How wide can motifs be?” from 5 to 15. **!Don't forget this step, otherwise you will wait for your results for quite some time. ** (Why?)
+- Press “Advanced options”, set “How wide can motifs be?” **from 5 to 15**. **Don't forget this step, otherwise you will wait for your results for quite some time (Why?)**
 - Submit and wait for results
 - Go to `"MEME HTML output"` and check the result
 
