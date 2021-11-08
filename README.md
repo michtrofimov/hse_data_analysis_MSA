@@ -174,10 +174,12 @@ Save this file and download it to your local computer. **This will be your input
 > If you copy the output to console, it’s easy to use **vim** command line text editor to retrieve the blocks of sequences. 
 >
 > Create new file with alignment:  	`vim tmp.algn`
->
-> Press `“Ctrl+V”` to select the block of interest 
->(starting from the first row and first position), `“y”` to copy the text, 
->`“:wq”` to exit vim. 
+> 
+> 1. Position the cursor at the beginning of the text you want to copy
+> 2. Press `“Ctrl+V”` **ONCE** to select the block of interest (starting from the first row and first position), 
+> 3. Move the cursor to the end of the text to be copied
+> 4. Type `“y”` to copy the text, 
+> 5. Type `“:wq”` to exit vim. 
 >
 > Open empty new file:
 >
