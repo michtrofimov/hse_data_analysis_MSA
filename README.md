@@ -267,7 +267,7 @@ about the factor or species. You need to derive this information from MEME-ChIP 
 
 4.2. Download your file with peaks from the "data/unknown_peaks" folder from this repository: 
 
-https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/data/unknown_peaks
+https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/unknown_peaks
 
 4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that. 
 
