@@ -287,3 +287,7 @@ The deadline for the accomplishment of the home task is 12:00 on Wednesday, Nove
 
 I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. :) 
 Write me at Skoltech e-mail, search it in Outlook by Nikolai Bykov.
+
+### Acknowledgement
+
+Special thanks to Dr. Aleksandra Galitsyna for the materials and discussion.
