@@ -280,7 +280,7 @@ build the motifs from the given alignment and perform __de novo__ search of the 
 The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
 and express your opinion on the results. 
 
-The deadline for the accomplishment of the home task is 12:00 on Wednesday, September 16. 
+The deadline for the accomplishment of the home task is 12:00 on Wednesday, November 17. 
 
 ### Afterword from TA
 
