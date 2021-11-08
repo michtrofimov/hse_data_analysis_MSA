@@ -52,7 +52,7 @@ https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/mas
 1.1.b. If you select CLI, log in to server in Putty, or in bash: 
 
 ```bash
-ssh yourname@mg.uncb.iitp.ru -p 9022
+ssh yourname@mg.uncb.iitp.ru
 ```
 
 Then create a folder for this seminar: 
