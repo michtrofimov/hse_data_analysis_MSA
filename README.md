@@ -214,7 +214,7 @@ Save the forward logo to your local computer. **This will be part of your home a
 
 - Upload the upstreams.fasta file
 - Select `"One occurence per sequence"` for `"Select the site distribution"`
-- Press “Advanced options”, set “How wide can motifs be?” from 5 to 10. **!Don't forget this step, otherwise you will wait for your results for quite some time. ** (Why?)
+- Press “Advanced options”, set “How wide can motifs be?” from 5 to 15. **!Don't forget this step, otherwise you will wait for your results for quite some time. ** (Why?)
 - Submit and wait for results
 - Go to `"MEME HTML output"` and check the result
 
@@ -224,9 +224,8 @@ The initial submission form should look similar to this one:
 
 
 Are any of the found motifs similar to your result obtained manually in Task 2? 
+Try to submit the most significant motif to Tomtom program to find similar motifs in public libraries (click `Submit/Download`, select `Tomtom`, click `Submit`, adjust parameters to the prokaryotes search).
 Save the resulting report to your local computer. **This will be part of your home assignment (Task 3).**
-
-> Hint: the regulatory motif was PhnR from Vibrio. 
 
 ### 4. Motif search in ChIP-Seq data
 
