@@ -1,6 +1,6 @@
 ### Introduction: Bioinformatics seminars at Skoltech
 
-**Disclaimer:** the entire repository is fored from Aleksandra Galitsyna with her permission. 
+**Disclaimer:** the entire repository is forked from Aleksandra Galitsyna with her permission. 
 
 Welcome to the Seminar 4 of this term at Skoltech! 
 We're through the course on Bioinformatics by Mikhail Gelfand, and I (Nikolai Bykov) will be your TA for this seminar on 
