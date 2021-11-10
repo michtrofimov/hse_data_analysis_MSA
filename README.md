@@ -11,7 +11,7 @@ The slides and datasets for this seminar can be found in [this folder on github]
 The home assignments and table with files distribution can be found in Canvas. 
 
 
-## Seminar 4. Multiple Global Alignment and Multiple Local Alignment 
+## Seminar 4. Multiple Alignments
 
 Nikolai Bykov 10/11/2021
 
