@@ -29,7 +29,7 @@ If you need to download raw file, you can press `"Raw"` in GitHub window with fi
 
 https://raw.githubusercontent.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
 
-### 1. Multiple alignment
+### Task 1. Multiple alignment
 
 In this part of the task you will work with alignments with three popular aligners: MUSCLE, ClustalW and T-COFFEE. 
 
@@ -190,7 +190,7 @@ Save this file and download it to your local computer. **This will be your input
 > Then press `“Esc”` and exit vim. You an save this file and exit `“:wq”` or simply copy the result to console.
 
 
-### 2. Construction of position weight matrix (PWM)
+### Task 2. Construction of position weight matrix (PWM)
  
 You will use the output of Task 1 (1.7) for the construction of consensus sequence and PWM. 
 
@@ -208,7 +208,7 @@ frequencies matrix, then to weights, profile and logo.
 
 Save the forward logo to your local computer. **This will be part of your home assignment (Task 2).**
 
-### 3. Automated search of motifs in the sequences with MEME. 
+### Task 3. Automated search of motifs in the sequences with MEME. 
 
 3.1. Now let’s switch to some more automated tool, Multiple Expression motifs for Motif Elicitation (MEME, http://meme-suite.org/tools/meme). 
 
@@ -227,7 +227,7 @@ Are any of the found motifs similar to your result obtained manually in Task 2?
 Try to submit the most significant motif to Tomtom program to find similar motifs in public libraries (click `Submit/Download`, select `Tomtom`, click `Submit`, adjust parameters to the prokaryotes search).
 Save the resulting report to your local computer. **This will be part of your home assignment (Task 3).**
 
-### 4. Motif search in ChIP-Seq data
+### Task 4. Motif search in ChIP-Seq data
 
 Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset. 
 Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
