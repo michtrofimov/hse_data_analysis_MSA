@@ -84,7 +84,7 @@ less upstreams.fasta # view the content of the file
 
 1.2. Select one of the aligners to run on these sequences. Your aim is to find small (up to 16 bp) regulatory regions of DNA in the 
 upstream sequences of bacterial genes. To improve the quality of the alignment, you can try to vary the parameters. 
-Please, note these parameters, you will be asked to report them in the assignment. 
+Please, note these parameters, you will be asked to report them in the assignment.
 
 Helpful links:
 
@@ -99,7 +99,7 @@ Helpful links:
 ![Web Server Instructions 1](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure1.png)
 
 
-![Web Server Instructions 2](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure2.png?raw=true)
+![Web Server Instructions 2](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure2.png)
 
 
 1.2.b. In terminal, to get the documentation of the aligners, type one of these: 
