@@ -5,7 +5,9 @@
 We're going through the course on Bioinformatics held by Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
 sequence alignments and motif search. 
 
-The slides and datasets for this seminar can be found in [this folder on github](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data). 
+All material for this seminar can be found at github [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
+
+The datasets for this seminar can be found in [this folder on github](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data). 
 
 The home assignments and table with files distribution can be found in Canvas. 
 
