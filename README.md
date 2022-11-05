@@ -36,8 +36,8 @@ wget https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_c
 
 In this part of the task you will work with alignments with three popular aligners: MUSCLE, ClustalW and T-COFFEE. 
 
-To access these aligners you can use either **web server interface** (and work on local computers), 
-or **command line interface (CLI)** (and run aligners remotely though bash interface). 
+To access these aligners you can use either **web server interface** (and work on your local computers), 
+or **command line interface (CLI)** (and run aligners remotely through bash interface). 
 
 > To increase the diversity of your skills and get the best of the course, I highly recommend you 
 > to combine both approaches and try CLI for some aligners and web interface for other. 
@@ -49,7 +49,7 @@ or **command line interface (CLI)** (and run aligners remotely though bash inter
  
 1.1.a. To download the files on the local computer, follow the links, e.g.:
 
-https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
+https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
 
 1.1.b. If you select CLI, log in to server in Putty, or in bash: 
