@@ -49,7 +49,7 @@ or **command line interface (CLI)** (and run aligners remotely through bash inte
  
 1.1.a. To download the files on the local computer, follow the links, e.g.:
 
-https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
+https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta 
 
 
 1.1.b. If you select CLI, log in to server in Putty, or in bash: 
