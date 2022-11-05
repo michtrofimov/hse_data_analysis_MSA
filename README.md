@@ -56,10 +56,10 @@ or **command line interface (CLI)** (and run aligners remotely through bash inte
 https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta 
 
 
-1.1.b. If you select CLI, log in to server in Putty, or in bash: 
+1.1.b. If you select CLI, connect to skoltech vpn, log in to server in Putty, or in bash: 
 
 ```bash
-ssh yourname@mg.uncb.iitp.ru
+ssh yourname@10.30.194.110
 ```
 
 Then create a folder for this seminar: 
