@@ -49,7 +49,7 @@ or **command line interface (CLI)** (and run aligners remotely through bash inte
 > If you select the web server interface, please, follow the instructions denoted with "a". 
 > If you select the CLI, follow the instructions with "b"
 
-1.1. Download the file with upstream regions of bacterial orthologs (upstreams.fasta).
+1.1. Download the file with upstream regions of bacterial orthologs (`upstreams.fasta`).
  
 1.1.a. To download the files on the local computer, follow the links, e.g.:
 
@@ -72,7 +72,7 @@ cd Seminar4
 To download the files in the terminal, use: 
 
 ```bash
-wget https://raw.githubusercontent.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta
+https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta
 ```
 
 Useful commands to check the result of download: 
