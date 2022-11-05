@@ -124,11 +124,11 @@ Check the output of these commands. What is the file format of the output?
 
 1.3. Download the output files with alignments, or copy full alignments to the clipboard. 
 
-1.4. Visualize the alignment using MView provided by EMBL-EBI: [https://www.ebi.ac.uk/Tools/msa/mview/](https://www.ebi.ac.uk/Tools/msa/mview/)
+1.4. Visualize **the alignment** using MView provided by EMBL-EBI: [https://www.ebi.ac.uk/Tools/msa/mview/](https://www.ebi.ac.uk/Tools/msa/mview/)
 
 This tool allow you to paste your alignment and highlight it based on sequence conservation. 
 
-Pay extra attention to: 
+**Pay extra attention to**: 
 - Type of sequence you upload/paste (DNA)
 - Input format of your alignment. The full list of MView-accepted formats can be found [here](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MView+Help+and+Documentation#MViewHelpandDocumentation-informat). 
 The examples of different formats can be found [here](https://www.hiv.lanl.gov/content/sequence/HelpDocs/SEQsamples.html)
@@ -181,7 +181,7 @@ Save this file and download it to your local computer. **This will be your input
 > Hint for advanced bash users. 
 > If you copy the output to console, it’s easy to use **vim** command line text editor to retrieve the blocks of sequences. 
 >
-> Create new file with alignment:  	`vim tmp.algn`
+> Create new file with alignment: 	`vim tmp.algn`
 > 
 > 1. Position the cursor at the beginning of the text you want to copy
 > 2. Press `“Ctrl+V”` **ONCE** to select the block of interest (starting from the first row and first position), 
