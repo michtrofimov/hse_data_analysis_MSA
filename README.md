@@ -26,10 +26,10 @@ If you need to view the file, the link will be:
 
 https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
-If you need to download a raw file, press `"Raw"` in GitHub window with file, copy the link from browser and use `wget` to download. See example below: 
+If you need to download a raw file, press `"Raw"` in GitHub window with file, copy the link from the browser and use `wget` to download. See an example below: 
 
 ```
-wget https://raw.githubusercontent.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
+wget https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
 ```
 
 ### Task 1. Multiple alignment
