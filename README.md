@@ -5,7 +5,7 @@
 We're going through the course on Bioinformatics held by Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
 sequence alignments and motif search. 
 
-All materials for this seminar,including slides and datasets, can be found at github repo [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
+All materials for this seminar,including slides and datasets, can be found at [the github repo](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
 
 The datasets are deposited [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data). 
 
@@ -96,7 +96,8 @@ Helpful links:
 
 1.2.a. If you select web server interface, follow the instructions on the website, for example: 
 
-![Web Server Instructions 1](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure1.png?raw=true)
+![Web Server Instructions 1](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure1.png)
+
 
 ![Web Server Instructions 2](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure2.png?raw=true)
 
