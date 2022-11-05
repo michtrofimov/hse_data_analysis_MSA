@@ -2,32 +2,33 @@
 
 **Disclaimer:** the entire repository is forked from Aleksandra Galitsyna with her permission. 
 
-Welcome to the Seminar 4 of this term at Skoltech! 
-We're through the course on Bioinformatics by Mikhail Gelfand, and I (Nikolai Bykov) will be your TA for this seminar on 
+We're going through the course on Bioinformatics held by Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
 sequence alignments and motif search. 
 
-The slides and datasets for this seminar can be found in [this folder on github](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/). 
+The slides and datasets for this seminar can be found in [this folder on github](https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/). 
 
 The home assignments and table with files distribution can be found in Canvas. 
 
 
 ## Seminar 4. Multiple Alignments
 
-Nikolai Bykov 10/11/2021
+Anna Rybina 12/11/2021
 
 ### Location of the files
 
-The files for this hometask are located in this github repository: 
+The files for this hometask are located at this github repository: 
 
-https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/
+https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/
 
 If you need to view the file, the link will be: 
 
 https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
-If you need to download raw file, you can press `"Raw"` in GitHub window with file and the link will be: 
+If you need to download a raw file, press `"Raw"` in GitHub window with file, copy the link from browser and use `wget` to download. See example below: 
 
-https://raw.githubusercontent.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
+```
+wget https://raw.githubusercontent.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
+```
 
 ### Task 1. Multiple alignment
 
