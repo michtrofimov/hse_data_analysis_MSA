@@ -26,7 +26,11 @@ If you need to view the file, the link will be:
 
 https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
-If you need to download a raw file, press `"Raw"` in GitHub window with file, copy the link from the browser and use `wget` to download. See an example below: 
+To download a raw file, there are 2 options:
+
+a) `right click` the `Raw` button at the top of the file, select `Save Link As…` (or depending on the version of your Internet browser, `Download Linked File As...`), choose the location on your computer where you want to save the file, and select `Save`. 
+
+b) press `Raw` in GitHub window with file, copy the link from the browser and use `wget` to download as in an example below: 
 
 ```
 wget https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
