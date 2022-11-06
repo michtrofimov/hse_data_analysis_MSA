@@ -243,7 +243,7 @@ We will use this knowledge for a test run of MEME-ChIP.
 
 - Download ChIP-Seq peaks ([peaks.fasta](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
 - Go to MEME-ChIP web interface: http://meme-suite.org/ -> MEME-ChIP
-- Do not change the options, submit the peaks.fasta file
+- Do not change the options, submit the `peaks.fasta` file
 
 The result will look as following: 
 
