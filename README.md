@@ -285,7 +285,7 @@ Your home task will be in Canvas "Assignments" section.
 The assignments will test your understanding of the topic. 
 You are expected to learn how to use T-COFFEE, Muscle and ClustalW, 
 build global and local alignments (and tell the difference between them), 
-build the motifs from the given alignment and perform __de novo__ search of the motifs.
+build the motifs from the given alignment and perform _de novo_ search of the motifs.
 The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
 and express your opinion on the results. 
 
