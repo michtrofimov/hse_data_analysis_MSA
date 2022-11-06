@@ -232,7 +232,7 @@ The initial submission form should look similar to this one:
 
 
 Are any of the found motifs similar to your result obtained manually in Task 2? 
-Try to submit the most significant motif to Tomtom program to find similar motifs in public libraries (click `Submit/Download`, select `Tomtom`, click `Submit`, adjust parameters to the prokaryotes search).
+Try to submit the most significant motif to Tomtom program to find similar motifs in public libraries (click `Submit/Download`, select `Tomtom`, click `Submit`, adjust parameters to the **prokaryotes** search).
 Save the resulting report to your local computer. **This will be part of your home assignment (Task 3).**
 
 ### Task 4. Motif search in ChIP-Seq data
