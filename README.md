@@ -2,7 +2,7 @@
 
 **Disclaimer:** the entire repository is forked from Aleksandra Galitsyna with her permission. 
 
-We're going through the course on Bioinformatics held by Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
+We're going through the course on Bioinformatics held by Prof. Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
 sequence alignments and motif search. 
 
 All materials for this seminar,including slides and datasets, can be found at [the github repo](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
