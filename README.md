@@ -14,7 +14,7 @@ For the home assignments and table with files distribution, check out Canvas.
 
 ## Seminar 4. Multiple Alignments
 
-Anna Rybina 12/11/2021
+Anna Rybina 12/11/2022
 
 ### Location of the files
 
