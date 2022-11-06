@@ -238,7 +238,7 @@ Save the resulting report to your local computer. **This will be part of your ho
 ### Task 4. Motif search in ChIP-Seq data
 
 Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset. 
-Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
+Your input is the peaks from ChIP-Seq experiment on _Gallus gallus_ (chicken) for CTCF protein. 
 We will use this knowledge for a test run of MEME-ChIP. 
 
 - Download ChIP-Seq peaks ([peaks.fasta](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
