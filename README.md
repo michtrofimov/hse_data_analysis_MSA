@@ -228,7 +228,7 @@ Save the forward logo to your local computer. **This will be part of your home a
 
 The initial submission form should look similar to this one: 
 
-![MEME Instructions](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure3.png?raw=true)
+![MEME Instructions](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure3.png)
 
 
 Are any of the found motifs similar to your result obtained manually in Task 2? 
@@ -241,13 +241,13 @@ Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset.
 Your input is the peaks from ChIP-Seq experiment on __Gallus gallus__ (chicken) for CTCF protein. 
 We will use this knowledge for a test run of MEME-ChIP. 
 
-- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
+- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
 - Go to MEME-ChIP web interface: http://meme-suite.org/ -> MEME-ChIP
 - Do not change the options, submit the peaks.fasta file
 
 The result will look as following: 
 
-![MEME ChIP output](https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure4.png?raw=true)
+![MEME ChIP output](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure4.png)
 
 To interpret this result, take a look at:
 - Number of found motifs
@@ -275,7 +275,7 @@ about the factor or species. You need to derive this information from MEME-ChIP 
 
 4.2. Download your file with peaks from the "data/unknown_peaks" folder from this repository: 
 
-https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/unknown_peaks
+https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/unknown_peaks
 
 4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that. 
 
@@ -289,12 +289,12 @@ build the motifs from the given alignment and perform __de novo__ search of the 
 The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
 and express your opinion on the results. 
 
-The deadline for the accomplishment of the home task is 12:00 on Wednesday, November 17. 
+The deadline for the accomplishment of the home task is 12:00 on Wednesday, November 23. 
 
 ### Afterword from TA
 
 I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. :) 
-Write me at Skoltech e-mail, search it in Outlook by Nikolai Bykov.
+Write me at Skoltech e-mail, search it in Outlook by Anna Rybina.
 
 ### Acknowledgement
 
