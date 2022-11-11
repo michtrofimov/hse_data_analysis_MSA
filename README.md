@@ -231,7 +231,7 @@ The deadline for submitting the home task is **12:00 on Wednesday, November 23**
 
 ### Afterword from TA
 
-I hope it was fun to learn about alignments, motifs search and analysis of ChIP-Seq peaks. :) 
+I hope it was fun to learn about alignments, motif search and analysis of ChIP-Seq peaks. :) 
 Write me at Skoltech e-mail, search it in Outlook by Anna Rybina.
 
 ### Acknowledgement
