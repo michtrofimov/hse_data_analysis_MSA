@@ -1,6 +1,6 @@
 ### Introduction: Bioinformatics seminars at Skoltech
 
-**Disclaimer:** the entire repository is forked from Aleksandra Galitsyna with her permission. 
+**Disclaimer:** the entire repository is initially forked from Aleksandra Galitsyna with her permission. 
 
 We're going through the course on Bioinformatics held by Prof. Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
 sequence alignments and motif search. 
