@@ -12,7 +12,7 @@ The datasets are deposited [here](https://github.com/rybinaanya/2022_Skoltech_Bi
 For the home assignments and table with files distribution, check out Canvas. 
 
 
-## Seminar 4. Multiple Alignments
+## Seminar 4. Motif Discovery. Multiple Alignments
 
 Anna Rybina 12/11/2022
 
