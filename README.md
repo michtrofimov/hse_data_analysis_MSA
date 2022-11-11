@@ -7,9 +7,9 @@ sequence alignments and motif search.
 
 All materials for this seminar,including slides and datasets, can be found at [the github repo](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
 
-The datasets are deposited [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data). 
+The data is deposited [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data) and in Canvas. 
 
-For the home assignments and table with files distribution, check out Canvas. 
+For the home assignment and table with files distribution, check out Canvas. 
 
 
 ## Seminar 4. Motif Discovery. Multiple Alignments
