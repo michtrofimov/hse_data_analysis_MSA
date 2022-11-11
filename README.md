@@ -105,8 +105,7 @@ Save the information about the aligner and the image. **This will be part of you
 
 1.7. Copy the best candidate regulatory sequence alignment only and manually convert it into FASTA file. 
 Use text editor for this task to save the selected block of the alignment as a separate file. 
-You may use Word, Notepad/TextEdit to create only the alignment; 
-advanced users might use `vim` block-selection opportunity (see below). 
+You may use Word, Notepad/TextEdit to create only the alignment. 
 
 The resulting file should contain something like:
 
