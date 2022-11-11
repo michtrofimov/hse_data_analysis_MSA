@@ -18,7 +18,7 @@ Anna Rybina 12/11/2022
 
 ### Location of the files
 
-The files for this hometask are located at this github repository: 
+The files for this hometask are located at Canvas and at this github repository: 
 
 https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/
 
@@ -26,7 +26,7 @@ If you need to view the file, the link will be:
 
 https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
 
-To download a raw file, there are 2 options:
+To download a raw file from github, there are 2 options:
 
 a) `right click` the `Raw` button at the top of the file, select `Save Link As…` (or depending on the version of your Internet browser, `Download Linked File As...`), choose the location on your computer where you want to save the file, and select `Save`. 
 
@@ -208,19 +208,18 @@ about the factor or species. You need to derive this information from MEME-ChIP 
 
 https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/unknown_peaks
 
-4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that. 
+4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that (html format). 
 
-### Home assignments
+### Home assignment
 
 Your home task will be in Canvas "Assignments" section. 
-The assignments will test your understanding of the topic. 
-You are expected to learn how to use T-COFFEE, Muscle and ClustalW, 
-build global and local alignments (and tell the difference between them), 
+The assignment will test your understanding of the topic. 
+You are expected to learn how to use T-COFFEE, Muscle and ClustalW,  
 build the motifs from the given alignment and perform _de novo_ search of the motifs.
 The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
 and express your opinion on the results. 
 
-The deadline for submitting the home task is 12:00 on Wednesday, November 23. 
+The deadline for submitting the home task is **12:00 on Wednesday, November 23**. 
 
 ### Afterword from TA
 
@@ -229,4 +228,4 @@ Write me at Skoltech e-mail, search it in Outlook by Anna Rybina.
 
 ### Acknowledgement
 
-Special thanks to Dr. Aleksandra Galitsyna for the materials and discussion.
+Special thanks to Dr. Aleksandra Galitsyna for the materials.
