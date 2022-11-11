@@ -212,11 +212,7 @@ https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree
 ### Home assignment
 
 Your home task will be in Canvas "Assignments" section. 
-The assignment will test your understanding of the topic. 
-You are expected to learn how to use T-COFFEE, Muscle and ClustalW,  
-build the motifs from the given alignment and perform _de novo_ search of the motifs.
-The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, 
-and express your opinion on the results. 
+The assignment will test your understanding of the topic. You are expected to learn how to use T-COFFEE, Muscle and ClustalW, build the motifs from the given alignment and perform _de novo_ search of the motifs. The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, and express your opinion on the results. 
 
 The deadline for submitting the home task is **12:00 on Wednesday, November 23**. 
 
