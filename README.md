@@ -216,7 +216,7 @@ Download file  `S103_peaks.narrowPeak` from Canvas or [here](https://github.com/
 We are interested in the column containing so-called **fold-change** values.  Fold-change (=fold enrichment) metric shows us the ChIP signal as the fold increase in signal relative to the background signal. The higher the fold-change is, the more chances that the ChIP-signal corresponds to a real binding event between the studied regulator and DNA region rather than just noise (e.g. non-specific binding). 
 
 Your task is to identify which peak has **the highest fold enrichment (=fold-change) value**. Use the command line to find such a peak
-> Hint:  read about sorting a file numerically by a certain column in reverse order.
+> Hint:  sorting a file numerically by a certain column sounds interesting...
 
 In you home assignemnt, provide 1) maximum fold-change value, 2) the name of the peak with respective fold enrichment, and 3) `bash` command that you used to answer this question. 
 
