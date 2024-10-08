@@ -47,7 +47,7 @@ upstream регионах бактериальных генов. Чтобы ул
 Проверьте вывод этих команд. Каков формат выходного файла? 
 
 > Подсказка: обычно выходные данные представлены в формате [FASTA](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) 
-> или в формате [CLUSTAL](http://scikit-bio.org/docs/0.2.1/generated/skbio.io.clustal.html#:~:text=Format%20Specification,in%20the%20alignment%20%5BR152%5D.). 
+> или в формате [CLUSTAL](https://meme-suite.org/meme/doc/clustalw-format.html). 
 
 1.3. Загрузите полученные файлы с выравниваниями или скопируйте сами полные выравнивания в буфер обмена. 
 
