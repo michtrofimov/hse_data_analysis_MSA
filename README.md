@@ -1,113 +1,93 @@
-### Introduction: Bioinformatics seminars at Skoltech
+## Лекция/Семинар 5. Обнаружение мотивов. Множественное выравнивание
 
-**Disclaimer:** the entire repository is initially forked from Aleksandra Galitsyna with her permission. 
+**Референс:** весь репозиторий форкнут у Анны Рыбиной с ее разрешения. 
 
-We're going through the course on Bioinformatics held by Prof. Mikhail Gelfand, and I (Anna Rybina) will be your TA for the Seminar 4 on 
-sequence alignments and motif search. 
+Анна Рыбина 12/11/2022
 
-All materials for this seminar,including slides and datasets, can be found at [the github repo](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/)
+### Расположение файлов
 
-The data is deposited [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data) and in Canvas. 
+Файлы для этого домашнего задания находятся в этом репозитории github: 
 
-For the home assignment and table with files distribution, check out Canvas. 
+https://github.com/michtrofimov/hse_data_analysis_MSA
 
+Если вам нужно просмотреть файл, ссылка будет: 
 
-## Seminar 4. Motif Discovery. Multiple Alignments
+https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/data/upstreams.fasta
 
-Anna Rybina 12/11/2022
+Чтобы скачать необработанный файл с github, есть 2 варианта:
 
-### Location of the files
+a) щелкните правой кнопкой мыши по кнопке `Raw` в верхней части файла, выберите `Save Link As...` (или, в зависимости от версии вашего интернет-браузера, `Download Linked File As...`), выберите место на вашем компьютере, куда вы хотите сохранить файл, и выберите `Save`. 
 
-The files for this hometask are located at Canvas and at this github repository: 
-
-https://github.com/rybinaanya/2021_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/
-
-If you need to view the file, the link will be: 
-
-https://github.com/encent/2021_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/upstreams.fasta
-
-To download a raw file from github, there are 2 options:
-
-a) `right click` the `Raw` button at the top of the file, select `Save Link As…` (or depending on the version of your Internet browser, `Download Linked File As...`), choose the location on your computer where you want to save the file, and select `Save`. 
-
-b) press `Raw` in GitHub window with file, copy the link from the browser and use `wget` to download as in an example below: 
+б) нажмите `Raw` в окне GitHub с файлом, скопируйте ссылку из браузера и используйте `wget` для загрузки, как в примере ниже: 
 
 ```
-wget https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/peaks.fasta
+wget https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/data/upstreams.fasta
 ```
 
-### Task 1. Multiple alignment
+### Задание 1. Множественное выравнивание
 
-In this part of the task you will work with alignments with three popular aligners: MUSCLE, ClustalW and T-COFFEE. 
+В этой части задания вы будете работать с выравниваниями с помощью трех популярных выравнивателей: MUSCLE, ClustalW и T-COFFEE. 
 
+1.1. Скачайте файл с upstream регионами бактериальных ортологов (генов) (`upstreams.fasta`).
 
-1.1. Download the file with upstream regions of bacterial orthologs (`upstreams.fasta`).
- 
-1.1. To download the files on the local computer, follow the links, e.g.:
+1.2. Выберите один из выравнивателей для работы с этими последовательностями. Ваша цель - найти небольшие (до 16 п.н.) регуляторные последовательности ДНК в 
+upstream регионах бактериальных генов. Чтобы улучшить качество выравнивания, вы можете попробовать варьировать параметры. Пожалуйста, запишите эти параметры, вам нужно будет сообщить их в задании.
 
-https://raw.githubusercontent.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/master/data/upstreams.fasta 
+Полезные ссылки:
 
-
-1.2. Select one of the aligners to run on these sequences. Your aim is to find small (up to 16 bp) regulatory regions of DNA in the 
-upstream sequences of bacterial genes. To improve the quality of the alignment, you can try to vary the parameters. 
-Please, note these parameters, you will be asked to report them in the assignment.
-
-Helpful links:
-
-| Aligner  | Web server link                            | CLI manual                                                               | Original paper |  Type |
+| Тул | Ссылка | CLI мануал | Оригинальная статья | Тип |
 |----------|------------------------------------------|--------------------------------------------------------------------------|----------------|---|
-| MUSCLE   | https://www.ebi.ac.uk/Tools/msa/muscle   | [`muscle` manual](https://www.drive5.com/muscle/manual/options.html)                       |     [Edgar 2004](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-113)           | Global alignment  |
-| ClustalW | https://www.genome.jp/tools-bin/clustalw | [`clustalw` manual](http://manpages.ubuntu.com/manpages/bionic/man1/clustalw.1.html)          |     [Thompson et al. 1994](https://academic.oup.com/nar/article-abstract/22/22/4673/2400290?redirectedFrom=fulltext)           | Global alignment  |
-| T-COFFEE | http://tcoffee.crg.cat/                  | [`t_coffee` manual](https://tcoffee.readthedocs.io/en/latest/tcoffee_main_documentation.html) |     [Notredame et al. 2000](https://www.sciencedirect.com/science/article/abs/pii/S0022283600940427?via%3Dihub)           |  Global and local alignment |
+| MUSCLE | https://www.ebi.ac.uk/Tools/msa/muscle | [`muscle` manual](https://www.drive5.com/muscle/manual/options.html) | [Edgar 2004](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-113)           | Глобальное выравнивание |
+| ClustalW | https://www.genome.jp/tools-bin/clustalw | [руководство `clustalw`](http://manpages.ubuntu.com/manpages/bionic/man1/clustalw.1.html) | [Thompson et al. 1994](https://academic.oup.com/nar/article-abstract/22/22/4673/2400290?redirectedFrom=fulltext)           | Глобальное выравнивание |
+| T-COFFEE | http://tcoffee.crg.cat/ | [`t_coffee` manual](https://tcoffee.readthedocs.io/en/latest/tcoffee_main_documentation.html) | [Notredame et al. 2000](https://www.sciencedirect.com/science/article/abs/pii/S0022283600940427?via%3Dihub) | Глобальное и локальное выравнивание |
 
-1.2.a. If you select web server interface, follow the instructions on the website, for example: 
+1.2.a. Если вы выбрали интерфейс веб-сервера, следуйте инструкциям на сайте, например: 
 
-![Web Server Instructions 1](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure1.png)
-
-
-![Web Server Instructions 2](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure2.png)
+![Web Server Instructions 1](https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/images/Figure1.png)
 
 
-Check the output of these commands. What is the file format of the output? 
+![Инструкции веб-сервера 2](https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/images/Figure2.png)
 
-> Hint: typically the output is represented in [FASTA](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) 
->or [CLUSTAL](http://scikit-bio.org/docs/0.2.1/generated/skbio.io.clustal.html#:~:text=Format%20Specification,in%20the%20alignment%20%5BR152%5D.) format. 
+Проверьте вывод этих команд. Каков формат выходного файла? 
 
-1.3. Download the output files with alignments, or copy full alignments to the clipboard. 
+> Подсказка: обычно выходные данные представлены в формате [FASTA](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) 
+> или в формате [CLUSTAL](http://scikit-bio.org/docs/0.2.1/generated/skbio.io.clustal.html#:~:text=Format%20Specification,in%20the%20alignment%20%5BR152%5D.). 
 
-1.4. Visualize **the alignment** using MView provided by EMBL-EBI: [https://www.ebi.ac.uk/Tools/msa/mview/](https://www.ebi.ac.uk/Tools/msa/mview/)
+1.3. Загрузите полученные файлы с выравниваниями или скопируйте сами полные выравнивания в буфер обмена. 
 
-This tool allow you to paste your alignment and highlight it based on sequence conservation. 
+1.4. Визуализируйте **выравнивание** с помощью MView, предоставленного EMBL-EBI: [https://www.ebi.ac.uk/Tools/msa/mview/](https://www.ebi.ac.uk/Tools/msa/mview/).
 
-**Pay extra attention to**: 
-- Type of sequence you upload/paste (DNA)
-- Input format of your alignment. The full list of MView-accepted formats can be found [here](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MView+Help+and+Documentation#MViewHelpandDocumentation-informat). 
-The examples of different formats can be found [here](https://www.hiv.lanl.gov/content/sequence/HelpDocs/SEQsamples.html)
+Этот инструмент позволит вам вставить ваше выравнивание и выделить его на основе сохранения последовательности. 
 
-> Do not paste the original upstreams.fasta at this step! Your alignment should contain gaps ("-" symbols). 
+**Уделите особое внимание**: 
+- Тип последовательности, которую вы загружаете/вставляете (ДНК).
+- Формат входных данных для выравнивания. Полный список форматов, принимаемых MView, можно найти [здесь] (https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MView+Help+and+Documentation#MViewHelpandDocumentation-informat). 
+Примеры различных форматов можно найти [здесь](https://www.hiv.lanl.gov/content/sequence/HelpDocs/SEQsamples.html)
 
-1.5. Propose a region that might be conserved regulatory sequence of DNA in the alignment of gene upstreams of bacteria. 
-There is no ultimately right answer, so concentrate on the best candidate you observe and describe your conclusion. 
+> Не вставляйте исходный файл upstreams.fasta на этом шаге! Ваше выравнивание должно содержать пропуски (символы «-»). 
 
-Consider the following criteria for conserved regulatory sequence: 
-- Should it be present in all the sequences? (probably yes)
-- Should it contain the gaps? (probably no)
-- Should it be located close to the gene start? (probably yes)
+1.5. Предложите регион, который может быть консервативной регуляторной последовательностью ДНК в выравнивании генных восходящих потоков бактерий. 
+Окончательно правильного ответа не существует, поэтому сосредоточьтесь на лучшем из наблюдаемых вами кандидатов и опишите свой вывод. 
 
-1.6. Try another aligner. Has the result changed? 
+Рассмотрите следующие критерии консервативной регуляторной последовательности: 
+- Должна ли она присутствовать во всех последовательностях? (вероятно, да)
+- Должна ли она содержать пропуски? (вероятно, нет)
+- Должна ли она быть расположена близко к началу гена? (вероятно, да).
 
-Try all three aligners, select the one that results in most full and realistic regulatory sequences. 
+1.6. Попробуйте другой выравниватель. Изменился ли результат? 
 
-Visualize the best aligner output at the location of the best candidate regulatory sequence alignment. 
-You may highlight the candidate regulatory sequence by graphics editor.
+Попробуйте все три выравнивателя, выберите тот, который дает наиболее полные и реалистичные регуляторные последовательности. 
 
-Save the information about the aligner and the image. **This will be part of your home assignment (Task 1).**
+Визуализируйте результат работы лучшего выравнивателя в месте наилучшего выравнивания кандидатной регуляторной последовательности. 
+Вы можете выделить кандидатную регуляторную последовательность с помощью графического редактора.
 
-1.7. Copy the best candidate regulatory sequence alignment only and manually convert it into FASTA file. 
-Use text editor for this task to save the selected block of the alignment as a separate file. 
-You may use Word, Notepad/TextEdit to create only the alignment. 
+Сохраните информацию о выравнивателе и изображение. **Это будет частью вашего домашнего задания (Задание 1)**.
 
-The resulting file should contain something like:
+1.7. Скопируйте выравнивание лучшего кандидата на мотив (регуляторную последовательнось) и вручную преобразуйте его в файл FASTA. 
+Для выполнения этого задания используйте текстовый редактор, чтобы сохранить выделенный блок выравнивания в отдельный файл. 
+Вы можете использовать Word, Notepad/TextEdit для создания только выравнивания. 
+
+Полученный файл должен содержать что-то вроде:
 
 ```
 >1
@@ -126,114 +106,105 @@ GGCCAATTTACTGCGTT
 AACCAGCTTGAGACAGC
 ```
 
-Save this file and download it to your local computer. **This will be your input for the construction of PWM (Task 2).**
+Сохраните этот файл и загрузите его на свой локальный компьютер. **Это будет вашим исходным материалом для построения PWM (задание 2)**.
 
-### Task 2. Construction of position weight matrix (PWM)
+### Задача 2. Построение матрицы позиционных весов (PWM)
  
-You will use the output of Task 1 (1.7) for the construction of consensus sequence and PWM. 
+Вы будете использовать результаты задачи 1 (1.7) для построения консенсусной последовательности и PWM. 
 
-2.1. Do the following steps:
-- Go to RSAT web tool: http://embnet.ccg.unam.mx/rsat/ 
-- Click -> `"Matrix tools"` from left menu 
-- -> `"convert matrix"`
-- Select matrix format `“sequences”`
-- Paste alignment of conserved sequences in FASTA format to the field, or upload the file
-- Check the boxes "consensus", "counts", "frequencies", "weights", "profile" and "Compute reverse complement" (if they are not selected). 
-Set all other parameters to default. Press “GO”. 
+2.1. Выполните следующие действия:
+- Зайдите в веб-инструмент RSAT: http://embnet.ccg.unam.mx/rsat/. 
+- Нажмите -> ``Инструменты матрицы`` в левом меню 
+-> ``конвертировать матрицу``.
+- Выберите формат матрицы `«последовательности»`.
+- Вставьте в поле выравнивание консервативных последовательностей в формате FASTA или загрузите файл
+- Установите флажки «consensus», «counts», «frequencies», «weights», «profile» и «Compute reverse complement» (если они не выбраны). 
+Установите все остальные параметры по умолчанию. Нажмите «GO». 
 
-2.2. In the RSAT output you can observe the transition from alignment to nucleotides counts matrix, 
-frequencies matrix, then to weights, profile and logo. 
+2.2. В выходных данных RSAT можно наблюдать переход от выравнивания к матрице количества нуклеотидов, 
+матрице частот, затем к весам, профилю и логотипу. 
 
-Save the forward logo to your local computer. **This will be part of your home assignment (Task 2).**
+Сохраните логотип форварда на локальном компьютере. **Это будет частью вашего домашнего задания (Задание 2)**.
 
-### Task 3. Automated search of motifs in the sequences with MEME. 
+### Задача 3. Автоматизированный поиск мотивов в последовательностях с помощью MEME. 
 
-3.1. Now let’s switch to some more automated tool, Multiple Expression motifs for Motif Elicitation (MEME, http://meme-suite.org/tools/meme). 
+3.1. Теперь перейдем к более автоматизированному инструменту - Multiple Expression motifs for Motif Elicitation (MEME, http://meme-suite.org/tools/meme). 
 
-- Upload the upstreams.fasta file
-- Select `"One occurence per sequence"` for `"Select the site distribution"`
-- Press “Advanced options”, set “How wide can motifs be?” from 5 to 15. **Don't forget this step, otherwise you will wait for your results for quite some time (Why?)**
-- Submit and wait for results
-- Go to `"MEME HTML output"` and check the result
+- Загрузите файл upstreams.fasta.
+- Выберите ``One occurence per sequence`` для ``Select the site distribution``.
+- Нажмите «Advanced options», установите значение «How wide can motifs be?» от 5 до 15. **Не забудьте про этот шаг, иначе вы будете ждать результатов довольно долго (почему?)**.
+- Отправьте и ждите результатов
+- Перейдите в раздел `«MEME HTML output»` и проверьте результат.
 
-The initial submission form should look similar to this one: 
+Первоначальная форма отправки должна выглядеть примерно так: 
 
-![MEME Instructions](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure3.png)
+![Инструкции MEME](https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/images/Figure3.png)
 
+Есть ли среди найденных мотивов те, которые похожи на ваш результат, полученный вручную в задании 2? 
+Попробуйте отправить наиболее значимый мотив в программу Tomtom для поиска похожих мотивов в публичных библиотеках (нажмите `Submit/Download`, выберите `Tomtom`, нажмите `Submit`, настройте параметры на поиск **prokaryotes**).
+Сохраните полученный отчет на локальном компьютере. **Это будет частью вашего домашнего задания (задание 3)**.
 
-Are any of the found motifs similar to your result obtained manually in Task 2? 
-Try to submit the most significant motif to Tomtom program to find similar motifs in public libraries (click `Submit/Download`, select `Tomtom`, click `Submit`, adjust parameters to the **prokaryotes** search).
-Save the resulting report to your local computer. **This will be part of your home assignment (Task 3).**
+### Задача 4. Поиск мотивов в данных ChIP-Seq
 
-### Task 4. Motif search in ChIP-Seq data
+Теперь вы будете использовать MEME-ChIP для поиска мотивов в наборе данных ChIP-Seq. 
+Ваши исходные данные - пики из эксперимента ChIP-Seq на _Gallus gallus_ (курица) для белка CTCF. 
+Мы будем использовать эти данные для тестового запуска MEME-ChIP. 
 
-Now you will use MEME-ChIP for search of motifs in ChIP-Seq dataset. 
-Your input is the peaks from ChIP-Seq experiment on _Gallus gallus_ (chicken) for CTCF protein. 
-We will use this knowledge for a test run of MEME-ChIP. 
+- Загрузите пики ChIP-Seq ([peaks.fasta](https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/data/peaks.fasta)). 
+- Перейдите в веб-интерфейс MEME-ChIP: http://meme-suite.org/ -> MEME-ChIP.
+- Не меняя опций, отправьте файл `peaks.fasta`.
 
-- Download ChIP-Seq peaks ([peaks.fasta](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/peaks.fasta)). 
-- Go to MEME-ChIP web interface: http://meme-suite.org/ -> MEME-ChIP
-- Do not change the options, submit the `peaks.fasta` file
+Результат будет выглядеть следующим образом: 
 
-The result will look as following: 
+![MEME ChIP output](https://github.com/michtrofimov/hse_data_analysis_MSA/blob/master/images/Figure4.png)
 
-![MEME ChIP output](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/images/Figure4.png)
+Чтобы интерпретировать этот результат, посмотрите на:
+- Количество найденных мотивов
+- E-значения совпадений (Что вы считаете значимым?)
+- Расхождение между E-значением лучшего попадания и E-значениями субоптимальных попаданий (Ожидаете ли вы большого расхождения для значимых попаданий?)
+- Известные или схожие мотивы с хитом, полученным с помощью инструмента TOMTOM 
+(Вы можете нажать на ссылки в этом поле, чтобы узнать больше. Являются ли совпадения, полученные с помощью TOMTOM, значимыми?)
+- Сложность и длина логотипа. 
+(Можно ли ожидать, что мотив окажется слишком коротким или будет содержать всего 2-4 информативные позиции?) 
+- Распределение возможных сайтов связывания вокруг центров пиков. 
 
-To interpret this result, take a look at:
-- Number of found motifs
-- E-values of the hits (What would you consider significant?)
-- Discrepancy between E-value of the best hit and E-values of suboptimal hits (Do you expect high discrepancy for meaningful hits?)
-- Known or similar motifs to the hit obtained by TOMTOM tool 
-(You can press the links in this field to learn more. Are the TOMTOM hits significant?)
-- Complexity and the length of the logo. 
-(Can you expect the motif to too short or contain only 2-4 informational positions?) 
-- Distribution of the possible binding sites around the centers of the peaks 
+> Подсказка о том, как выбрать лучший мотив. 
+> Вы работаете с пиками ChIP-Seq, которые представляют собой последовательности ДНК, связываемые белком CTCF.
+> В ChIP-Seq белок связывается преимущественно в центре пиков. 
+> Если в пиках с хорошим E-значением и центральным обогащением вы заметили какой-то мотив, 
+> это признак истинного мотива связывания интересующего вас белка.
+> Более того, если вы наблюдаете значительное сходство с CTCF других позвоночных, вы можете быть уверены, что нашли правильный мотив.
 
-> Hint on how to select the best motif. 
-> You work with ChIP-Seq peaks, which represent the DNA sequences bound by CTCF protein.
-> In ChIP-Seq, the protein is bound preferentially at the center of peaks. 
-> If you observe some motif in the peaks sequences with good E-value and central enrichment, 
-> this is a sign of true motif of the binding protein of interest.
-> Even more, if you observe significant similarity to other vertebrates' CTCF, you must be sure you've found the right motif.
+> Если вы заметили, что в ваших пиках значительно обогащены другие мотивы, это может быть совместное связывание факторов хроматина. 
 
-> If you observe some other motifs significantly enriched in your peaks, it might be the co-occuring binding of chromatin factors. 
+Теперь, когда вы научились работать с MEME-ChIP, вы можете загрузить свой собственный файл с ChIP-Seq. У вас нет информации 
+о факторе или виде. Вам необходимо получить эту информацию из результатов MEME-ChIP. 
 
-Now, as you've learned to work with MEME-ChIP, you can download your own file with ChIP-Seq. You do not have the information 
-about the factor or species. You need to derive this information from MEME-ChIP output. 
+4.1. Найдите свое имя и соответствующий файл в таблице, представленной в разделе «Файлы» для данного семинара в **Canvas**.
 
-4.1. Find your name and corresponding file in the table provided in Files section for this seminar in **Canvas**
+4.2. Загрузите ваш файл с пиками из папки «data/unknown_peaks» из этого репозитория: 
 
-4.2. Download your file with peaks from the "data/unknown_peaks" folder from this repository: 
+https://github.com/michtrofimov/hse_data_analysis_MSA/tree/master/data/unknown_peaks
 
-https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/tree/master/data/unknown_peaks
+4.3. Запустите MEME-ChIP и **ответьте на вопросы в Заданиях (Задание 4)**. Для этого вам может понадобиться скачать отчет MEME-ChIP (формат html). 
 
-4.3. Run MEME-ChIP and **answer to the questions in the Assignements (Task 4)**. You may need to download the MEME-ChIP report for that (html format). 
+### Задание 5. Упражнение с командной строкой
 
-### Task 5. Command line exercise
+Скачайте файл `S103_peaks.narrowPeak` с github. Этот файл является одним из выходных файлов, генерируемых программой `macs2` в результате вызова пиков, и содержит информацию о предсказанных регионах, связанных регулятором. Формат этого файла - .BED. Описание файла `NAME_peaks.narrowPeak` можно найти на официальном сайте программы `macs2`: https://github.com/macs3-project/MACS/blob/03e3492a4c1940544a6e63693fc23cba0f3c7f0f/docs/source/docs/callpeak.md#L4 
 
-Download file  `S103_peaks.narrowPeak` from Canvas or [here](https://github.com/rybinaanya/2022_Skoltech_Bioinformatics_course_seminar_4/blob/master/data/S103_peaks.narrowPeak) from github. This file is one of the output files generated by the `macs2` program as a result of peak calling and contains information on predicted regions bound by the regulator. Format of this file is BED-like. Find the description of `NAME_peaks.narrowPeak` file at the official site of the `macs2` software: https://github.com/macs3-project/MACS/blob/master/docs/callpeak.md. 
+Нас интересует колонка, содержащая так называемые **fold-change** значения.  Метрика fold-change (=кратное изменение) показывает нам сигнал ChIP как кратное увеличение сигнала по отношению к фоновому сигналу. Чем выше fold-change, тем больше шансов, что ChIP-сигнал соответствует реальному событию связывания между изучаемым регулятором и участком ДНК, а не просто шуму (например, неспецифическому связыванию). 
 
-We are interested in the column containing so-called **fold-change** values.  Fold-change (=fold enrichment) metric shows us the ChIP signal as the fold increase in signal relative to the background signal. The higher the fold-change is, the more chances that the ChIP-signal corresponds to a real binding event between the studied regulator and DNA region rather than just noise (e.g. non-specific binding). 
+Ваша задача - определить, какой пик имеет **самое высокое значение fold enrichment (=fold-change)**. Чтобы найти такой пик, воспользуйтесь командной строкой
+> Подсказка: сортировка файла по определенному столбцу звучит подозрительно полезно...
 
-Your task is to identify which peak has **the highest fold enrichment (=fold-change) value**. Use the command line to find such a peak
-> Hint:  sorting a file numerically by a certain column sounds interesting...
-
-In you home assignemnt, provide 1) maximum fold-change value, 2) the name of the peak with respective fold enrichment, and 3) `bash` command that you used to answer this question. 
-
+В домашнем задании укажите 1) максимальное значение fold-change, 2) название пика с соответствующим fold enrichment и 3) команду `bash`, которую вы использовали для ответа на этот вопрос. 
 
 
-### Home assignment
 
-Your home task will be in Canvas "Assignments" section. 
-The assignment will test your understanding of the topic. You are expected to learn how to use T-COFFEE, Muscle and ClustalW, build the motifs from the given alignment and perform _de novo_ search of the motifs. The home assignment will test the correct output of the tools in your hand, your ability to observe and interpret the results, and express your opinion on the results. 
+### Домашнее задание
 
-The deadline for submitting the home task is **12:00 on Wednesday, November 23**. 
+Задание проверит ваше понимание темы. Вы должны научиться использовать T-COFFEE, Muscle и ClustalW, строить мотивы из заданного выравнивания и выполнять _de novo_ поиск мотивов. Домашнее задание проверит правильность использования имеющихся в вашем распоряжении инструментов, умение наблюдать и интерпретировать результаты, а также выражать свое мнение по поводу полученных результатов. 
 
-### Afterword from TA
+### Благодарность
 
-I hope it was fun to learn about alignments, motif search and analysis of ChIP-Seq peaks. :) 
-Write me at Skoltech e-mail, search it in Outlook by Anna Rybina.
-
-### Acknowledgement
-
-Special thanks to Dr. Aleksandra Galitsyna for the materials.
+Особая благодарность Анне Рыбиной, Александре Галицыной за предоставленные материалы.
